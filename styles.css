@@ -70,6 +70,11 @@ main {}
 
 main .section-banner {
     background-color: var(--Very-Pale-Cyan);
+    /* background-color: green; */
+    background-image: url(images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-bottom: 30px;
 }
 
@@ -87,6 +92,7 @@ main .section-banner-content .group.first {
 }
 
 main .section-banner-content .group.first h1 {
+    margin-top: 60px;
     text-align: center;
     width: 300px;
     margin-bottom: 5px;
@@ -118,8 +124,13 @@ main .section-banner-content .group.first button:hover{
     transition: 0.2s;
 }
 
+main .section-banner-content .group.second{
+    display: flex;
+    justify-content: center;
+}
+
 main .section-banner-content .group.second img {
-    width: 100%;
+    width: 90%;
 }
 
 /* SECTION CARDS  */
@@ -282,12 +293,10 @@ main .section-banner-content .group.second img {
     font-size: 1.3rem;
     cursor: pointer;
 }
-
-.footer .footer-content .group-info.second ul li:hover{
-    border-bottom: 1px solid white;
+.footer .footer-content .group-info.second ul li span:hover{
+ border-bottom: 1px solid white;
     transition: 0.2s;
 }
-
 
 .footer .footer-content .group-info.third {}
 
@@ -304,7 +313,7 @@ main .section-banner-content .group.second img {
     font-size: 1.3rem;
     cursor: pointer;
 }
-.footer .footer-content .group-info.third ul li:hover{
+.footer .footer-content .group-info.third ul li span:hover{
     border-bottom: 1px solid white;
     transition: 0.2s;
 }
@@ -346,6 +355,14 @@ main .section-banner-content .group.second img {
 
     /* SECTION BANNER  */
 
+    main .section-banner {
+        background-image: url(images/bg-hero-desktop.svg);
+    }
+
+    .header .group.first .logo{
+        width: 150px;
+    }
+
     main .section-banner-content {
         flex-direction: row;
     }
@@ -367,6 +384,12 @@ main .section-banner-content .group.second img {
     main .section-banner-content .group.first p{
         text-align: start;
         width: 430px;
+    }
+
+    .header .group.second button{
+        padding: 10px 50px;
+        font-size: .75rem;
+        font-weight: 800;
     }
 
     .section-cards .cards .card {
