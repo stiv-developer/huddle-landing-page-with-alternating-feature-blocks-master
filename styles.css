@@ -352,10 +352,21 @@ main .section-banner-content .group.second img {
 
     main .section-banner-content .group.first {
         width: 50%;
+        align-items: start;
     }
 
     main .section-banner-content .group.second {
         width: 50%;
+    }
+
+    main .section-banner-content .group.first h1{
+        text-align: start;
+        font-size: 1.7rem;
+    }
+
+    main .section-banner-content .group.first p{
+        text-align: start;
+        width: 430px;
     }
 
     .section-cards .cards .card {
